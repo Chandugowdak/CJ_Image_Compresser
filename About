@@ -1,0 +1,25 @@
+Tech stack:
+
+Frontend: React (with Bootstrap for design)
+Backend: Express.js (Node.js)
+Database: MongoDB (optional, if you want to store compressed images or logs)
+Image Processing: Use libraries like sharp or imagemin in the backend for compression
+Project Flow:
+
+Frontend (React):
+
+Upload an image using a form.
+Preview the uploaded image.
+Send the image to the backend via an API call.
+Receive the compressed image and provide a download option.
+(Optional) Show before-and-after file size and quality comparison.
+Backend (Express.js):
+
+Handle image upload using middleware like multer.
+Compress the image using sharp or imagemin.
+Send back the compressed image to the frontend.
+(Optional) Store the image or its metadata in MongoDB.
+Database (MongoDB):
+
+(Optional) Store logs of uploaded and compressed images with timestamps.
+You can also save user data if you add login functionality later.
